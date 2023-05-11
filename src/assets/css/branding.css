@@ -1,0 +1,42 @@
+.sideNav{
+    background-color: #f5c2d9;
+}
+.nav_bar{
+    background-color: #f5c2d9 ;
+}
+.submit_btn{
+    background-image: linear-gradient(243.04deg,#ff593d -1.66%,#ff007f 50.23%,#c41974 99.97%) !important;
+}
+.btn_login{
+    background-image: linear-gradient(243.04deg,#ff593d -1.66%,#ff007f 50.23%,#c41974 99.97%) !important;
+}
+.bgColor{
+    background-color: #fff2f8;
+}
+.headerTextFontcolorNew, .loginText1{
+    color: #ff007f !important;
+}
+.form-select{
+  border-color: #ff007f !important;
+  height: 45px !important;
+
+}
+input[type="file" i] {
+    height: 45px !important;
+    border-color: #ff007f !important;
+}
+
+input[type="file"]::file-selector-button {
+    background-color: #ff007f;
+    transition: 1s;
+    height: 45px !important;
+    color: #fff2f8 !important;
+  }
+  .items_menu{
+        color: #ff007f !important;
+        font-size: 18px !important;
+  }
+  .formLableText{
+    color: #ff007f !important;
+
+  }

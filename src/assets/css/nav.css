@@ -1,0 +1,33 @@
+.nav_bar{
+    height: 74px;
+    color: white;
+}
+.navFlexbox{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 2.1rem;
+    padding-right: 2rem;
+}
+.nav-items{
+    display: flex;
+    grid-gap: 3rem;
+    height: 100%;
+    align-items: center;
+}
+.dropdown-menu[data-bs-popper] {
+    right: 0 !important;
+    left: inherit !important;
+    top: 40px;
+}
+
+.nav-link {
+    display: flex;
+    align-items: center;
+}
+
+#navbarScrollingDropdown{
+    display: flex !important;
+}
+.navbar-brand:hover{
+    background-color: transparent !important;
+}

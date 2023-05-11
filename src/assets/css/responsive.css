@@ -1,0 +1,8 @@
+@media screen and (min-width:100px) and  (max-width:967px) {  
+    .hidden{
+        display: none !important;
+    }  
+    .login_body_grid{
+        grid-template-columns: none !important;
+    }
+}

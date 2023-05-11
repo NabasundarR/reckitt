@@ -1,0 +1,129 @@
+.searchInputs {
+    display: flex;
+    align-items: center;
+  }
+  body{
+    background-color: transparent;
+  }
+  .search input {
+    background-color: white;
+    border: 2px solid #777;
+    border-radius: 6px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    font-size: 18px;
+    padding: 15px;
+    height: 50px;
+    width: 100%;
+    margin-left: 10px;
+    padding-top:12px ;
+  }
+  
+  .search_new input {
+    border: 2px solid #777;
+    border-radius: 6px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    font-size: 18px;
+    padding: 15px;
+    height: 50px;
+    width: 100%;
+    margin-left: 10px;
+    padding-top:12px ;
+    cursor: not-allowed;
+  }
+  .SearchBarClass{
+    width: 100%;
+  }
+  .searchIcon {
+    height: 50px;
+    border: 2px solid #777;
+    width: 50px;
+    background-color: white;
+    display: grid;
+    place-items: center;
+    color: #777;
+    border-left: none;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+  
+  
+  }
+  .nodatavale{
+    display: none;
+  }
+  
+  input:focus {
+    outline: none;
+  }
+  .searchIcon svg {
+    font-size: 35px;
+  }
+  
+  .dataResult {
+      margin-top: 0px;
+      width: 90%;
+      height: auto;
+      max-height: 260px;
+      background-color: white;
+      box-shadow: 0px 35px 35px rgba(0, 0, 0, 0.9);
+      overflow: hidden;
+      overflow-y: auto;
+      margin-left: 10px;
+      position: absolute;
+      z-index: 1;
+      border-radius: 10px;
+  }
+  
+  .dataResult::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .dataResult .dataItem {
+    width: 100%;
+    height: 50px;
+    color: black;
+    display: grid;
+    align-content: center;
+    align-items: center;
+    padding-left: 10px;
+    padding-top: 0px;
+    text-decoration: none !important;
+  }
+  #PLEASEWAIT{
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.9);
+    color: white;
+  }
+  
+  .dataItem p {
+    margin-left: 10px;
+  }
+  #hoverDisplay a {
+    text-decoration: none !important;
+  }
+  
+  a:hover {
+    background-color: lightgrey;
+  }
+  
+  #clearBtn {
+    cursor: pointer;
+  }
+  #hoverDisplay{
+    border: 1px solid #eee;
+  }
+  
+  .dataItem {
+    width: 100%;
+    height: 50px;
+    color: #777;
+    display: grid;
+    align-content: center;
+    align-items: center;
+    padding-left: 10px;
+    padding-top: 0px;
+  }
+  
+  
+  

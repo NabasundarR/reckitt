@@ -1,0 +1,179 @@
+.sideNav {
+    height: 100%;
+    width: 80px;
+    position: fixed;
+    z-index: 1;
+    top: 74px;
+    left: 0;
+    overflow-x: hidden;
+    padding-top: 60px;
+}
+
+.homeContent {
+    width: 98%;
+    display: block;
+    margin: auto;
+    background-color: #eee;
+    height: 100vh;
+    border: 2px solid red;
+}
+
+#main {
+    border: 2px solid #fff2f8;
+    margin: auto;
+    display: block;
+    margin-left: 85px;
+    margin-top: 80px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    text-align: left;
+    padding: 2rem;
+    height: calc(100vh - 86px);
+    overflow: hidden;
+    overflow-y: auto;
+
+}
+
+.hideElement {
+    display: none;
+}
+
+.textAlign {
+    text-align: left;
+}
+
+.sideNavMenu {
+    width: 90%;
+    display: block;
+    margin: auto;
+    padding: 1rem;
+    height: calc(100vh - 220px);
+    overflow: hidden;
+    overflow-y: hidden;
+}
+
+.sideNavMenu_grid {
+    width: 100%;
+    display: grid;
+    grid-gap: 18px;
+    justify-content: initial !important;
+}
+
+.items_menu {
+    color: white;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    text-align: left;
+}
+
+.item_menuText {
+    display: none;
+}
+
+#mySidenav a{
+    text-decoration: none !important;
+}
+
+.active{
+    background-color: #eee !important;
+    color: #253978 !important;
+    border-radius: 4px;
+}
+.active .items_menu{
+    background-color: #eee !important;
+    color: black !important;
+    border-radius: 4px;
+}
+
+.menu-items .active{
+    background-color: #eee !important;
+    color: black !important;
+    border-radius: 4px;
+}
+#mySidenav a:hover{
+  border-radius: 4px !important;
+  background-color: transparent;
+  color: black !important;
+}
+.items_menu:hover{
+    color: white;
+}
+
+#All_reports .items_menu:hover{
+    background-color: transparent !important;
+}
+.item-flex-report{
+    display: flex;
+    grid-gap: 15px;
+}
+#All_reports{
+    padding-left: 0px;
+}
+
+#All_reports, #MenuItmes_Report{
+    display: block;
+}
+
+#pbiPages_div .items_menu a:hover{
+    color: white !important;
+}
+
+#reportName_id_name a:hover{
+    color: white !important;
+}
+
+#report_103:last-child { display:none }
+
+::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+
+   /* Tooltip text */
+   .mystyle .tooltiptext {
+    visibility: hidden;
+    background-color: black !important;
+    color: #fff !important;
+    text-align: center;
+    padding: 10px;
+    border-radius: 6px;
+    position: fixed;
+    z-index: 1;
+    margin-top: 25px;
+    font-size: 16px;
+  }
+  
+   /*Show the tooltip text when you mouse over the tooltip container */
+  .mystyle:hover .tooltiptext {
+    visibility: visible;
+  }
+
+  .mystyle .tooltiptext::after {
+    content: " ";
+    position: absolute;
+    bottom: 100%;  
+    left: 17%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent black transparent;
+  }
+  
+  #MenuItmes_Report .items_menu:hover{
+    color: black !important;
+  }

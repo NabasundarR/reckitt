@@ -1,0 +1,78 @@
+.login_body_grid {
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 65% 35%;
+    overflow: hidden;
+}
+
+.left_grid_text {
+    color: white;
+    width: 90%;
+    margin: auto;
+    display: block;
+}
+
+.right_grid_align {
+    height: 100%;
+    display: grid;
+    align-content: center;
+}
+
+.btn_login {
+    height: 40px;
+    color: white;
+    background-color: rgb(98, 113, 250);
+    border: none;
+    width: 70%;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.left_margin {
+    margin-top: 20px;
+    padding-bottom: 20px !important;
+}
+
+.logout {
+    cursor: pointer;
+}
+
+.login_body_content {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.loginPage {
+    background-color: aqua;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+
+}
+
+.textAlign {
+    text-align: left;
+}
+
+.MarsLogo {
+    justify-content: center;
+    align-content: center;
+    width: 100%;
+    display: grid;
+}
+
+.login_info {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+
+.login_bg_image{
+    background-repeat: no-repeat !important;
+    background-size: cover;
+}

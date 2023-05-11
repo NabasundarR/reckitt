@@ -1,0 +1,73 @@
+.notificationsCss {
+    position: fixed;
+    width: 350px;
+    height: calc(100vh - 86px);
+    background-color: #eee;
+    right: 0;
+    top: 80px;
+    display: none;
+    overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: auto;
+    border: 2px solid gray;
+    border-right: none;
+    transition: margin-right .5s;
+
+}
+.noti_icons{
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    border-radius: 100%;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #eee;
+    background-color: #eee;
+}
+.noti_items{
+    display: grid;
+    align-items: center;
+    align-content: center;
+    grid-gap: 10px;
+    background: white;
+    padding: 1.2rem;
+    grid-template-columns: 20% 60% 10%;
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+    margin-bottom:1px ;
+    text-align: left;
+
+}
+.noti_text{
+    display: grid;
+}
+.lastupdateOn{
+    font-size: 12px;
+    font-weight: 600;
+    color: #333;
+}
+.senderTitle{
+    font-size: 14px;
+    font-weight: 700;
+    
+    
+}
+.notificationMessage{
+    height: auto;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    color: #3d3d3d;
+    font-size: 14px;
+    text-align: left;
+}
+
+.notificationsCss::-webkit-scrollbar {
+    display: none;
+}
+.delete_icon{
+    display: grid;
+    justify-content: flex-end;
+}
