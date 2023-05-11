@@ -1,24 +1,14 @@
 import React, { useEffect, useState } from "react";
 import Navbar from "react-bootstrap/Navbar";
-import NavDropdown from "react-bootstrap/NavDropdown";
 import Logo from "../../assets/img/reckitt.svg";
 
 import {
-  FaBell,
-  FaStickyNote,
   FaBars,
-  FaTh,
   FaUserCircle,
 } from "react-icons/fa";
 import $ from "jquery";
 import "bootstrap/dist/css/bootstrap.min.css";
-import Logout from "../auth/Logout";
-import { IoIosPerson } from "react-icons/io";
 import { useOktaAuth } from "@okta/okta-react";
-import Notifications from "../notifications/Notifications";
-import Badge from "@mui/material/Badge";
-import NotificationsActiveIcon from "@material-ui/icons/NotificationsActive";
-import NotificationsData from "../notifications/Notifications";
 
 const NavHeader = (props) => {
   const { authState, oktaAuth } = useOktaAuth();
@@ -63,20 +53,7 @@ const NavHeader = (props) => {
     }
   };
 
-  const notifications = () => {
-    const x = document.getElementById("NotificationsIdValues");
-    console.log(x.style.display);
-    if (x.style.display === "") {
-      $("#NotificationsIdValues").toggle(0);
-      $("#main").css("marginRight", "355px");
-    } else if (x.style.display === "none") {
-      $("#NotificationsIdValues").toggle();
-      $("#main").css("marginRight", "355px");
-    } else {
-      $("#NotificationsIdValues").toggle();
-      $("#main").css("marginRight", "6px");
-    }
-  };
+ 
 
   return (
     <>
@@ -130,9 +107,7 @@ const NavHeader = (props) => {
           </div>
         </div>
       </Navbar>
-      <div id="NotificationsIdValues" className="notificationsCss">
-        <Notifications />
-      </div>
+     
     </>
   );
 };

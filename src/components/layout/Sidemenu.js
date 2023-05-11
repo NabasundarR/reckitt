@@ -1,23 +1,6 @@
-import React, { useEffect, useRef, useState } from "react";
-import {
-  FaThLarge,
-  FaDatabase,
-  FaTelegram,
-  FaCubes,
-  FaUserCog,
-  FaUserAlt,
-  FaUsersCog,
-  FaMinus,
-  FaPlus,
-  FaUsers,
-  FaUserPlus,
-  FaRegChartBar,
-  FaAngleDown,
-  FaAngleUp,
-  FaCogs,
-  FaRegFilePdf
-} from "react-icons/fa";
-import { Link, useParams } from "react-router-dom";
+import React, { useEffect } from "react";
+import { FaRegFilePdf} from "react-icons/fa";
+import { Link } from "react-router-dom";
 import "../../assets/css/sidenav.css";
 import $ from 'jquery'
 import Logout from "../auth/Logout";
