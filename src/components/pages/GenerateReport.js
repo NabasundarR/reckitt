@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, {  useState } from "react";
 import NavHeader from '../layout/NavHeader'
 import SideMenu from '../layout/Sidemenu'
 import Button from "react-bootstrap/Button";
@@ -35,11 +35,11 @@ const GenerateReport = () => {
     const [PdffileFormart ,setPdffileFormart] = useState("application/pdf");
     const [modalShow, setModalShow] = React.useState(false);
 
-    const passtoken = JSON.parse(localStorage.getItem("okta-token-storage"))[
+    {/*const passtoken = JSON.parse(localStorage.getItem("okta-token-storage"))[
       "accessToken"
-    ]["accessToken"];
+    ]["accessToken"];*/}
   
-    const baseUrl = "/customdoc/generate";
+    //const baseUrl = "/customdoc/generate";
   
 
     const handleSubmit = (event) =>{
@@ -56,7 +56,7 @@ const GenerateReport = () => {
       formData.append('xlsFile', xlsxfile);
       formData.append('pdfFile', Pdffile);
 
-      console.log(invoicename,Templatetype,xlsxfile,Pdffile)
+      //console.log(invoicename,Templatetype,xlsxfile,Pdffile)
 
       const APIKey =  '725e37d2-97a8-11ed-a8fc-0242ac120002'
 
@@ -65,7 +65,7 @@ const GenerateReport = () => {
         event.stopPropagation();
       } else {
         
-        console.log("form validate");
+        //console.log("form validate");
         setIsloading(true);
 
         axios({
@@ -81,7 +81,7 @@ const GenerateReport = () => {
         })
       
         .then (res => {
-            console.log(res);
+           // console.log(res);
             if(res.status === 200){
               setInvoicename("")
               setTemplate("")
@@ -100,16 +100,16 @@ const GenerateReport = () => {
 
               const url = window.URL.createObjectURL(res.data)
               setsrcData(url)
-              const link = document.createElement('a');
+             // const link = document.createElement('a');
     
-              link.href = url;
+              //link.href = url;
     
-              link.setAttribute('download', 'file.pdf');
+             // link.setAttribute('download', 'file.pdf');
 
     
-              document.body.appendChild(link);
-              console.log("document.body.appendChild(link)")
-              console.log(document.body.appendChild(link))
+              //document.body.appendChild(link);
+              //console.log("document.body.appendChild(link)")
+              //console.log(document.body.appendChild(link))
               setModalShow(true)
              // link.click();
         
